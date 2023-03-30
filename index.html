@@ -1,1686 +1,430 @@
-<!DOCTYPE HTML>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="zxx">
 <head>
-    <!--=============== basic  ===============-->
     <meta charset="UTF-8">
-    <title>Gmag - Blog News Magazine Template</title>
-    <meta name="robots" content="index, follow" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <!--=============== css  ===============-->
-    <link type="text/css" rel="stylesheet" href="css/plugins.css">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
-    <link type="text/css" rel="stylesheet" href="css/color.css">
-    <!--=============== favicons ===============-->
-    <link rel="shortcut icon" href="images/favicon.ico">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CQR Haiti</title>
+    <link rel=icon href="assets/img/logoOG.png" sizes="20x20" type="image/png">
 
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+    <link rel="stylesheet" href="assets/css/magnific.min.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/owl.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
 <body>
-    <!-- main start  -->
-    <div id="main">
-        <!-- progress-bar  -->
-        <div class="progress-bar-wrap">
-            <div class="progress-bar color-bg"></div>
+
+    <!-- preloader area start -->
+    <!-- <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
         </div>
-        <!-- progress-bar end -->
-        <!-- header -->
-        <header class="main-header">
-            <!-- top bar -->
-            <div class="top-bar fl-wrap">
-                <div class="container">
-                    <div class="date-holder">
-                        <span class="date_num"></span>
-                        <span class="date_mounth"></span>
-                        <span class="date_year"></span>
-                    </div>
-                    <div class="header_news-ticker-wrap">
-                        <div class="hnt_title">Hot News :</div>
-                        <div class="header_news-ticker fl-wrap">
-                            <ul>
-                                <li><a href="post-single.html">They chose to leave rather than put up with a governor
-                                        who follows science .</a></li>
-                                <li><a href="post-single.html">Hold On to Your Travel Dreams in the World.</a></li>
-                                <li><a href="post-single.html">White endorses bill that would ensure abortion
-                                        access.</a></li>
-                                <li><a href="post-single.html">NFL Power Rankings 2021: How all 32 teams stack up after
-                                        Week 2.</a></li>
-                            </ul>
-                        </div>
-                        <div class="n_contr-wrap">
-                            <div class="n_contr p_btn"><i class="fas fa-caret-left"></i></div>
-                            <div class="n_contr n_btn"><i class="fas fa-caret-right"></i></div>
-                        </div>
-                    </div>
-                    <ul class="topbar-social">
-                        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
-                    </ul>
-                </div>
+    </div> -->
+    <!-- preloader area end -->
+
+    
+    <div class="body-overlay" id="body-overlay"></div>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-area navbar-area-2 navbar-expand-lg">
+        <div class="container nav-container">
+            <div class="responsive-mobile-menu">
+                <button class="menu toggle-btn d-block d-lg-none" data-target="#itech_main_menu" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-left"></span>
+                    <span class="icon-right"></span>
+                </button>
             </div>
-            <!-- top bar end -->
-            <div class="header-inner fl-wrap">
-                <div class="container">
-                    <!-- logo holder  -->
-                    <a href="index.html" class="logo-holder"><img src="images/logoW-10.png" alt=""></a>
-                    <!-- logo holder end -->
-                    <div class="search_btn htact show_search-btn"><i class="far fa-search"></i> <span
-                            class="header-tooltip">Search</span></div>
-                    <div class="srf_btn htact show-reg-form"><i class="fal fa-user"></i> <span
-                            class="header-tooltip">Sign In</span></div>
-                    <div class="show-cart sc_btn htact"><i class="fal fa-shopping-bag"></i><span
-                            class="show-cart_count">2</span><span class="header-tooltip">Your Cart</span></div>
-                    <!-- header-search-wrap -->
-                    <div class="header-search-wrap novis_sarch">
-                        <div class="widget-inner">
-                            <form action="#">
-                                <input name="se" id="se" type="text" class="search" placeholder="Search..." value="" />
-                                <button class="search-submit" id="submit_btn"><i class="fa fa-search transition"></i>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- header-search-wrap end -->
-                    <!-- header-cart_wrap  -->
-                    <div class="header-cart_wrap novis_cart">
-                        <div class="header-cart_title">Your Cart <span><strong>2</strong> items</span></div>
-                        <div class="header-cart_wrap_container fl-wrap">
-                            <div class="box-widget-content">
-                                <div class="widget-posts fl-wrap">
-                                    <ol>
-                                        <li class="clearfix">
-                                            <a href="#" class="widget-posts-img"><img src="images/shop/1.jpg"
-                                                    class="respimg" alt=""></a>
-                                            <div class="widget-posts-descr">
-                                                <a href="#" title="">Awesome Merch Wallet</a>
-                                                <div class="widget-posts-descr_calc clearfix">1 <span>x</span> $845
-                                                </div>
-                                            </div>
-                                            <div class="clear-cart_button"><i class="far fa-times"></i></div>
-                                        </li>
-                                        <li class="clearfix">
-                                            <a href="#" class="widget-posts-img"><img src="images/shop/2.jpg"
-                                                    class="respimg" alt=""></a>
-                                            <div class="widget-posts-descr">
-                                                <a href="#" title="">Gmag Merch Wallet</a>
-                                                <div class="widget-posts-descr_calc clearfix">2 <span>x</span> $222
-                                                </div>
-                                            </div>
-                                            <div class="clear-cart_button"><i class="fal fa-times"></i></div>
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="header-cart_wrap_total fl-wrap">
-                            <div class="header-cart_wrap_total_item">Subtotal : <span>$1559</span></div>
-                        </div>
-                        <div class="header-cart_wrap_footer fl-wrap">
-                            <a href="cart.html"> View Cart</a>
-                            <a href="checkout.html"> Checkout</a>
-                        </div>
-                    </div>
-                    <!-- header-cart_wrap end  -->
-                    <!-- nav-button-wrap-->
-                    <div class="nav-button-wrap">
-                        <div class="nav-button">
-                            <span></span><span></span><span></span>
-                        </div>
-                    </div>
-                    <!-- nav-button-wrap end-->
-                    <!--  navigation -->
-                    <div class="nav-holder main-menu">
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="#" class="act-link">Home <i class="fas fa-caret-down"></i></a>
-                                    <!--second level -->
-                                    <ul>
-                                        <li><a href="index.html">Slider</a></li>
-                                        <li><a href="index2.html">Carousel</a></li>
-                                        <li><a href="index3.html">Grid</a></li>
-                                    </ul>
-                                    <!--second level end-->
-                                </li>
-                                <li>
-                                    <a href="#">Posts<i class="fas fa-caret-down"></i></a>
-                                    <!--second level -->
-                                    <ul>
-                                        <li><a href="blog.html">List</a></li>
-                                        <li><a href="blog2.html">2 Sidebars</a></li>
-                                        <li><a href="blog3.html">Grid Sidebar</a></li>
-                                        <li><a href="blog4.html">Full Width Sidebar </a></li>
-                                        <li><a href="blog5.html">3 Columns Grid</a></li>
-                                        <li>
-                                            <a href="#">Single<i class="fas fa-caret-down"></i></a>
-                                            <!--second level -->
-                                            <ul>
-                                                <li><a href="post-single.html">Style 1</a></li>
-                                                <li><a href="post-single2.html">Style 2</a></li>
-                                            </ul>
-                                            <!--second level end-->
-                                        </li>
-                                    </ul>
-                                    <!--second level end-->
-                                </li>
-                                <li><a href="blog.html">Business</a></li>
-                                <li><a href="blog.html">Technology</a></li>
-                                <li>
-                                    <a href="#">Shop <i class="fas fa-caret-down"></i></a>
-                                    <!--second level -->
-                                    <ul>
-                                        <li><a href="shop.html">Products</a></li>
-                                        <li><a href="product-single.html">Product Single</a></li>
-                                        <li><a href="cart.html">Cart</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                    </ul>
-                                    <!--second level end-->
-                                </li>
-                                <li>
-                                    <a href="#">Pages<i class="fas fa-caret-down"></i></a>
-                                    <!--second level -->
-                                    <ul>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="contacts.html">Contacts</a></li>
-                                        <li><a href="category.html">Category</a></li>
-                                        <li><a href="author-single.html">Author Single</a></li>
-                                        <li><a href="404.html">404</a></li>
-                                    </ul>
-                                    <!--second level end-->
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <!-- navigation  end -->
-                </div>
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/my/logo.png" alt="img"></a>
             </div>
-        </header>
-        <!-- header end  -->
-        <!-- wrapper -->
-        <div id="wrapper">
-            <!-- content    -->
-            <div class="content">
-                <!-- hero-carousel-wrap    -->
-                <div class="hero-carousel-wrap fl-wrap">
-                    <div class="hero-carousel fl-wrap full-height">
-                        <div class="swiper-container full-height">
-                            <div class="swiper-wrapper">
-                                <!-- swiper-slide    -->
-                                <div class="swiper-slide">
-                                    <div class="hero-carousel-item fl-wrap">
-                                        <div class="grid-post-item  bold_gpi  fl-wrap">
-                                            <div class="grid-post-media gpm_sing">
-                                                <div class="bg" data-bg="images/all/57.jpg"></div>
-                                                <div class="author-link"><a href="author-single.html"><img
-                                                            src="images/avatar/4.jpg" alt=""> <span>By Guerley Junior</span></a></div>
-                                                <div class="grid-post-media_title">
-                                                    <a class="post-category-marker" href="category.html">Technology</a>
-                                                    <h4><a href="post-single.html">Innovations that Bring Pleasure to
-                                                            All Peoples</a></h4>
-                                                    <span class="video-date"><i class="far fa-clock"></i> 18 may
-                                                        2022</span>
-                                                    <ul class="post-opt">
-                                                        <li><i class="far fa-comments-alt"></i> 25 </li>
-                                                        <li><i class="fal fa-eye"></i> 164 </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- swiper-slide end    -->
-                                <!-- swiper-slide    -->
-                                <div class="swiper-slide">
-                                    <div class="hero-carousel-item hero-carousel-item_half fl-wrap">
-                                        <div class="grid-post-item  bold_gpi  fl-wrap">
-                                            <div class="grid-post-media gpm_sing">
-                                                <div class="bg" data-bg="images/all/36.jpg"></div>
-                                                <div class="author-link"><a href="author-single.html"><img
-                                                            src="images/avatar/3.jpg" alt=""> <span>Ann
-                                                            Kowalsky</span></a></div>
-                                                <div class="grid-post-media_title">
-                                                    <a class="post-category-marker" href="category.html">Politics</a>
-                                                    <h4><a href="post-single.html">Here's the proof that momentum
-                                                            strategies work</a></h4>
-                                                    <span class="video-date"><i class="far fa-clock"></i> 05 April
-                                                        2022</span>
-                                                    <ul class="post-opt">
-                                                        <li><i class="far fa-comments-alt"></i> 15 </li>
-                                                        <li><i class="fal fa-eye"></i> 234 </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="hero-carousel-item hero-carousel-item_half fl-wrap">
-                                        <div class="grid-post-item  bold_gpi  fl-wrap">
-                                            <div class="grid-post-media gpm_sing">
-                                                <div class="bg" data-bg="images/all/56.jpg"></div>
-                                                <div class="author-link"><a href="author-single.html"><img
-                                                            src="images/avatar/2.jpg" alt=""> <span>By Mark
-                                                            Rose</span></a></div>
-                                                <div class="grid-post-media_title">
-                                                    <a class="post-category-marker" href="category.html">Politics</a>
-                                                    <h4><a href="post-single.html">How Maps Reshape American Politics In
-                                                            World</a></h4>
-                                                    <span class="video-date"><i class="far fa-clock"></i> 22 march
-                                                        2022</span>
-                                                    <ul class="post-opt">
-                                                        <li><i class="far fa-comments-alt"></i> 25 </li>
-                                                        <li><i class="fal fa-eye"></i> 164 </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- swiper-slide end    -->
-                                <!-- swiper-slide    -->
-                                <div class="swiper-slide">
-                                    <div class="hero-carousel-item fl-wrap">
-                                        <div class="grid-post-item  bold_gpi  fl-wrap">
-                                            <div class="grid-post-media gpm_sing">
-                                                <div class="bg" data-bg="images/all/1.jpg"></div>
-                                                <div class="author-link"><a href="author-single.html"><img
-                                                            src="images/avatar/3.jpg" alt=""> <span>Ann
-                                                            Kowalsky</span></a></div>
-                                                <div class="grid-post-media_title">
-                                                    <a class="post-category-marker" href="category.html">Business</a>
-                                                    <h4><a href="post-single.html">Scientific research goes to the next
-                                                            level</a></h4>
-                                                    <span class="video-date"><i class="far fa-clock"></i> 30 september
-                                                        2021</span>
-                                                    <ul class="post-opt">
-                                                        <li><i class="far fa-comments-alt"></i> 25 </li>
-                                                        <li><i class="fal fa-eye"></i> 164 </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- swiper-slide end    -->
-                                <!-- swiper-slide    -->
-                                <div class="swiper-slide">
-                                    <div class="hero-carousel-item fl-wrap">
-                                        <div class="grid-post-item  bold_gpi  fl-wrap">
-                                            <div class="grid-post-media gpm_sing">
-                                                <div class="bg" data-bg="images/all/2.jpg"></div>
-                                                <div class="author-link"><a href="author-single.html"><img
-                                                            src="images/avatar/1.png" alt=""> <span>By Beeroth
-                                                            Corneille</span></a></div>
-                                                <div class="grid-post-media_title">
-                                                    <a class="post-category-marker" href="category.html">Business</a>
-                                                    <h4><a href="post-single.html">First prototype flight using kinetic
-                                                            launch system</a></h4>
-                                                    <span class="video-date"><i class="far fa-clock"></i> 15 March
-                                                        2022</span>
-                                                    <ul class="post-opt">
-                                                        <li><i class="far fa-comments-alt"></i> 67 </li>
-                                                        <li><i class="fal fa-eye"></i> 542 </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- swiper-slide end    -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-carousel-controls">
-                        <div class="hero-carousel-pag"></div>
-                        <div class="clearfix"></div>
-                        <div class="hc-cont hc-cont-next"><i class="fas fa-caret-right"></i></div>
-                        <div class="hc-cont hc-cont-prev"><i class="fas fa-caret-left"></i></div>
-                    </div>
-                </div>
-                <!-- section   -->
-                <section>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="main-container fl-wrap fix-container-init">
-                                    <div class="section-title">
-                                        <h2>Lastest World News</h2>
-                                        <h4>Don't miss daily news</h4>
-                                        <div class="ajax-nav">
-                                            <ul>
-                                                <li><a href="ajax/category1.html" class="current_page">World</a></li>
-                                                <li><a href="ajax/category2.html">Technology</a></li>
-                                                <li><a href="ajax/category3.html">Business</a></li>
-                                                <li><a href="ajax/category4.html">Sports</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="ajax-wrapper fl-wrap">
-                                        <div class="ajax-loader"><img src="images/loading.gif" alt="" /></div>
-                                        <div id="ajax-content" class="fl-wrap">
-                                        </div>
-                                    </div>
-                                    <div class="content-banner-wrap cbw_mar">
-                                        <img src="images/banner.jpg" class="respimg" alt="">
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="section-title sect_dec">
-                                        <h2>Top Stories</h2>
-                                        <h4>Don't miss daily news</h4>
-                                    </div>
-                                    <div class="grid-post-wrap">
-                                        <div class="more-post-wrap  fl-wrap">
-                                            <div class="list-post-wrap list-post-wrap_column fl-wrap">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <!--list-post-->
-                                                        <div class="list-post fl-wrap">
-                                                            <a class="post-category-marker"
-                                                                href="category.html">Science</a>
-                                                            <div class="list-post-media">
-                                                                <a href="post-single.html">
-                                                                    <div class="bg-wrap">
-                                                                        <div class="bg" data-bg="images/img5.jpg">
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                                <span class="post-media_title">&copy; Image Copyrights
-                                                                    Title</span>
-                                                            </div>
-                                                            <div class="list-post-content">
-                                                                <h3><a href="post-single.html">How to start Home
-                                                                        renovation.</a></h3>
-                                                                <span class="post-date"><i class="far fa-clock"></i> 05
-                                                                    April 2022</span>
-                                                            </div>
-                                                        </div>
-                                                        <!--list-post end-->
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <!--list-post-->
-                                                        <div class="list-post fl-wrap">
-                                                            <a class="post-category-marker"
-                                                                href="category.html">Sports</a>
-                                                            <div class="list-post-media">
-                                                                <a href="post-single.html">
-                                                                    <div class="bg-wrap">
-                                                                        <div class="bg" data-bg="images/all/52.jpg">
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                                <span class="post-media_title">&copy; Image Copyrights
-                                                                    Title</span>
-                                                            </div>
-                                                            <div class="list-post-content">
-                                                                <h3><a href="post-single.html">Warriors face season
-                                                                        defining clash</a></h3>
-                                                                <span class="post-date"><i class="far fa-clock"></i> 11
-                                                                    Janvier 2022</span>
-                                                            </div>
-                                                        </div>
-                                                        <!--list-post end-->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--grid-post-item-->
-                                        <div class="single-grid-slider-wrap fl-wrap">
-                                            <div class="single-grid-slider">
-                                                <div class="swiper-container">
-                                                    <div class="swiper-wrapper">
-                                                        <!-- swiper-slide-->
-                                                        <div class="swiper-slide">
-                                                            <div class="grid-post-item  bold_gpi  fl-wrap">
-                                                                <div class="grid-post-media gpm_sing">
-                                                                    <div class="bg" data-bg="images/all/37.jpg"></div>
-                                                                    <div class="author-link"><a
-                                                                            href="author-single.html"><img
-                                                                                src="images/avatar/2.jpg" alt="">
-                                                                            <span>By Mark Rose</span></a></div>
-                                                                    <div class="grid-post-media_title">
-                                                                        <a class="post-category-marker"
-                                                                            href="category.html">Technology</a>
-                                                                        <h4><a href="post-single.html">Videos show
-                                                                                SpaceX's Dragon capsule as it returns to
-                                                                                Earth</a></h4>
-                                                                        <span class="video-date"><i
-                                                                                class="far fa-clock"></i> 13 april
-                                                                            2021</span>
-                                                                        <ul class="post-opt">
-                                                                            <li><i class="far fa-comments-alt"></i> 25
-                                                                            </li>
-                                                                            <li><i class="fal fa-eye"></i> 164 </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- swiper-slide end-->
-                                                        <!-- swiper-slide-->
-                                                        <div class="swiper-slide">
-                                                            <div class="grid-post-item  bold_gpi  fl-wrap">
-                                                                <div class="grid-post-media gpm_sing">
-                                                                    <div class="bg" data-bg="images/img8.jpg"></div>
-                                                                    <div class="author-link"><a
-                                                                            href="author-single.html"><img
-                                                                                src="images/avatar/3.jpg" alt="">
-                                                                            <span>Ann Kowalsky</span></a></div>
-                                                                    <div class="grid-post-media_title">
-                                                                        <a class="post-category-marker"
-                                                                            href="category.html">Business</a>
-                                                                        <h4><a href="post-single.html">Scientific
-                                                                                research goes to the next level</a></h4>
-                                                                        <span class="video-date"><i
-                                                                                class="far fa-clock"></i> 30 september
-                                                                            2021</span>
-                                                                        <ul class="post-opt">
-                                                                            <li><i class="far fa-comments-alt"></i> 25
-                                                                            </li>
-                                                                            <li><i class="fal fa-eye"></i> 164 </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- swiper-slide end-->
-                                                        <!-- swiper-slide-->
-                                                        <div class="swiper-slide">
-                                                            <div class="grid-post-item  bold_gpi  fl-wrap">
-                                                                <div class="grid-post-media gpm_sing">
-                                                                    <div class="bg" data-bg="images/img7.jpg"></div>
-                                                                    <div class="author-link"><a
-                                                                            href="author-single.html"><img
-                                                                                src="images/avatar/1.png" alt="">
-                                                                            <span>By Beeroth Corneille\</span></a></div>
-                                                                    <div class="grid-post-media_title">
-                                                                        <a class="post-category-marker"
-                                                                            href="category.html">Technology</a>
-                                                                        <h4><a href="post-single.html">Climate change:
-                                                                                What do scientists want this week?</a>
-                                                                        </h4>
-                                                                        <span class="video-date"><i
-                                                                                class="far fa-clock"></i> 05 december
-                                                                            2021</span>
-                                                                        <ul class="post-opt">
-                                                                            <li><i class="far fa-comments-alt"></i> 25
-                                                                            </li>
-                                                                            <li><i class="fal fa-eye"></i> 164 </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- swiper-slide end-->
-                                                    </div>
-                                                    <div class="sgs-pagination sgs_ver "></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--grid-post-item end-->
-                                        <div class="more-post-wrap  fl-wrap">
-                                            <div class="list-post-wrap list-post-wrap_column fl-wrap">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <!--list-post-->
-                                                        <div class="list-post fl-wrap">
-                                                            <a class="post-category-marker"
-                                                                href="category.html">Sports</a>
-                                                            <div class="list-post-media">
-                                                                <a href="post-single.html">
-                                                                    <div class="bg-wrap">
-                                                                        <div class="bg" data-bg="images/img2.jpg">
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                                <span class="post-media_title">&copy; Image Copyrights
-                                                                    Title</span>
-                                                            </div>
-                                                            <div class="list-post-content">
-                                                                <h3><a href="post-single.html">Female Hawks win $10,000
-                                                                        funding boost</a></h3>
-                                                                <span class="post-date"><i class="far fa-clock"></i> 05
-                                                                    April 2022</span>
-                                                            </div>
-                                                        </div>
-                                                        <!--list-post end-->
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <!--list-post-->
-                                                        <div class="list-post fl-wrap">
-                                                            <a class="post-category-marker"
-                                                                href="category.html">Technology</a>
-                                                            <div class="list-post-media">
-                                                                <a href="post-single.html">
-                                                                    <div class="bg-wrap">
-                                                                        <div class="bg" data-bg="images/img1.jpg">
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                                <span class="post-media_title">&copy; Image Copyrights
-                                                                    Title</span>
-                                                            </div>
-                                                            <div class="list-post-content">
-                                                                <h3><a href="post-single.html">Cape Town's Day Zero: We
-                                                                        are axing trees to save water</a></h3>
-                                                                <span class="post-date"><i class="far fa-clock"></i>
-                                                                    11 Janvier 2022</span>
-                                                            </div>
-                                                        </div>
-                                                        <!--list-post end-->
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <!--list-post-->
-                                                        <div class="list-post fl-wrap">
-                                                            <a class="post-category-marker"
-                                                                href="category.html">Science</a>
-                                                            <div class="list-post-media">
-                                                                <a href="post-single.html">
-                                                                    <div class="bg-wrap">
-                                                                        <div class="bg" data-bg="images/img3.jpg">
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                                <span class="post-media_title">&copy; Image Copyrights
-                                                                    Title</span>
-                                                            </div>
-                                                            <div class="list-post-content">
-                                                                <h3><a href="post-single.html">High wind delays SpaceX
-                                                                        crew homecoming after 6 months aloft</a></h3>
-                                                                <span class="post-date"><i class="far fa-clock"></i> 11
-                                                                    Janvier 2022</span>
-                                                            </div>
-                                                        </div>
-                                                        <!--list-post end-->
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <!--list-post-->
-                                                        <div class="list-post fl-wrap">
-                                                            <a class="post-category-marker"
-                                                                href="category.html">Politics</a>
-                                                            <div class="list-post-media">
-                                                                <a href="post-single.html">
-                                                                    <div class="bg-wrap">
-                                                                        <div class="bg" data-bg="images/img4.jpg">
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                                <span class="post-media_title">&copy; Image Copyrights
-                                                                    Title</span>
-                                                            </div>
-                                                            <div class="list-post-content">
-                                                                <h3><a href="post-single.html">What the federal
-                                                                        infrastructure package means for Minnesota</a>
-                                                                </h3>
-                                                                <span class="post-date"><i class="far fa-clock"></i> 11
-                                                                    Janvier 2022</span>
-                                                            </div>
-                                                        </div>
-                                                        <!--list-post end-->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="blog2.html" class="dark-btn fl-wrap"> Read all News </a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <!-- sidebar   -->
-                                <div class="sidebar-content fl-wrap fix-bar">
-                                    <!-- box-widget -->
-                                    <div class="box-widget fl-wrap">
-                                        <div class="box-widget-content">
-                                            <!-- content-tabs-wrap -->
-                                            <div class="content-tabs-wrap tabs-act tabs-widget fl-wrap">
-                                                <div class="content-tabs fl-wrap">
-                                                    <ul class="tabs-menu fl-wrap no-list-style">
-                                                        <li class="current"><a href="#tab-popular"> Popular News </a>
-                                                        </li>
-                                                        <li><a href="#tab-resent">Resent News</a></li>
-                                                    </ul>
-                                                </div>
-                                                <!--tabs -->
-                                                <div class="tabs-container">
-                                                    <!--tab -->
-                                                    <div class="tab">
-                                                        <div id="tab-popular" class="tab-content first-tab">
-                                                            <div class="post-widget-container fl-wrap">
-                                                                <!-- post-widget-item -->
-                                                                <div class="post-widget-item fl-wrap">
-                                                                    <div class="post-widget-item-media">
-                                                                        <a href="post-single.html"><img
-                                                                                src="images/all/thumbs/1.jpg"
-                                                                                alt=""></a>
-                                                                    </div>
-                                                                    <div class="post-widget-item-content">
-                                                                        <h4><a href="post-single.html">How to start Home
-                                                                                education.</a></h4>
-                                                                        <ul class="pwic_opt">
-                                                                            <li><span><i class="far fa-clock"></i> 25
-                                                                                    may 2022</span></li>
-                                                                            <li><span><i
-                                                                                        class="far fa-comments-alt"></i>
-                                                                                    12</span></li>
-                                                                            <li><span><i class="fal fa-eye"></i>
-                                                                                    654</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- post-widget-item end -->
-                                                                <!-- post-widget-item -->
-                                                                <div class="post-widget-item fl-wrap">
-                                                                    <div class="post-widget-item-media">
-                                                                        <a href="post-single.html"><img
-                                                                                src="images/all/thumbs/2.jpg"
-                                                                                alt=""></a>
-                                                                    </div>
-                                                                    <div class="post-widget-item-content">
-                                                                        <h4><a href="post-single.html">The secret to
-                                                                                moving this screening.</a></h4>
-                                                                        <ul class="pwic_opt">
-                                                                            <li><span><i class="far fa-clock"></i> 13
-                                                                                    april 2021</span></li>
-                                                                            <li><span><i
-                                                                                        class="far fa-comments-alt"></i>
-                                                                                    6</span></li>
-                                                                            <li><span><i class="fal fa-eye"></i>
-                                                                                    1227</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- post-widget-item end -->
-                                                                <!-- post-widget-item -->
-                                                                <div class="post-widget-item fl-wrap">
-                                                                    <div class="post-widget-item-media">
-                                                                        <a href="post-single.html"><img
-                                                                                src="images/all/thumbs/3.jpg"
-                                                                                alt=""></a>
-                                                                    </div>
-                                                                    <div class="post-widget-item-content">
-                                                                        <h4><a href="post-single.html">Fall ability to
-                                                                                keep Congress on rails.</a></h4>
-                                                                        <ul class="pwic_opt">
-                                                                            <li><span><i class="far fa-clock"></i> 02
-                                                                                    December 2021</span></li>
-                                                                            <li><span><i
-                                                                                        class="far fa-comments-alt"></i>
-                                                                                    12</span></li>
-                                                                            <li><span><i class="fal fa-eye"></i>
-                                                                                    654</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- post-widget-item end -->
-                                                                <!-- post-widget-item -->
-                                                                <div class="post-widget-item fl-wrap">
-                                                                    <div class="post-widget-item-media">
-                                                                        <a href="post-single.html"><img
-                                                                                src="images/all/thumbs/4.jpg"
-                                                                                alt=""></a>
-                                                                    </div>
-                                                                    <div class="post-widget-item-content">
-                                                                        <h4><a href="post-single.html">Innovations that
-                                                                                Bring Aesthetic Pleasure to All.</a>
-                                                                        </h4>
-                                                                        <ul class="pwic_opt">
-                                                                            <li><span><i class="far fa-clock"></i> 30
-                                                                                    september 2021</span></li>
-                                                                            <li><span><i
-                                                                                        class="far fa-comments-alt"></i>
-                                                                                    44</span></li>
-                                                                            <li><span><i class="fal fa-eye"></i>
-                                                                                    684</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- post-widget-item end -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--tab  end-->
-                                                    <!--tab -->
-                                                    <div class="tab">
-                                                        <div id="tab-resent" class="tab-content">
-                                                            <div class="post-widget-container fl-wrap">
-                                                                <!-- post-widget-item -->
-                                                                <div class="post-widget-item fl-wrap">
-                                                                    <div class="post-widget-item-media">
-                                                                        <a href="post-single.html"><img
-                                                                                src="images/all/thumbs/5.jpg"
-                                                                                alt=""></a>
-                                                                    </div>
-                                                                    <div class="post-widget-item-content">
-                                                                        <h4><a href="post-single.html">Magpie nesting
-                                                                                zone sites.</a></h4>
-                                                                        <ul class="pwic_opt">
-                                                                            <li><span><i class="far fa-clock"></i> 05
-                                                                                    april 2021</span></li>
-                                                                            <li><span><i
-                                                                                        class="far fa-comments-alt"></i>
-                                                                                    16</span></li>
-                                                                            <li><span><i class="fal fa-eye"></i>
-                                                                                    727</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- post-widget-item end -->
-                                                                <!-- post-widget-item -->
-                                                                <div class="post-widget-item fl-wrap">
-                                                                    <div class="post-widget-item-media">
-                                                                        <a href="post-single.html"><img
-                                                                                src="images/all/thumbs/6.jpg"
-                                                                                alt=""></a>
-                                                                    </div>
-                                                                    <div class="post-widget-item-content">
-                                                                        <h4><a href="post-single.html">Locals help
-                                                                                create whole new community.</a></h4>
-                                                                        <ul class="pwic_opt">
-                                                                            <li><span><i class="far fa-clock"></i> 22
-                                                                                    Janvier 2021</span></li>
-                                                                            <li><span><i
-                                                                                        class="far fa-comments-alt"></i>
-                                                                                    31</span></li>
-                                                                            <li><span><i class="fal fa-eye"></i>
-                                                                                    63</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- post-widget-item end -->
-                                                                <!-- post-widget-item -->
-                                                                <div class="post-widget-item fl-wrap">
-                                                                    <div class="post-widget-item-media">
-                                                                        <a href="post-single.html"><img
-                                                                                src="images/all/thumbs/7.jpg"
-                                                                                alt=""></a>
-                                                                    </div>
-                                                                    <div class="post-widget-item-content">
-                                                                        <h4><a href="post-single.html">Tennis season
-                                                                                still to proceed.</a></h4>
-                                                                        <ul class="pwic_opt">
-                                                                            <li><span><i class="far fa-clock"></i> 06
-                                                                                    December 2021</span></li>
-                                                                            <li><span><i
-                                                                                        class="far fa-comments-alt"></i>
-                                                                                    05</span></li>
-                                                                            <li><span><i class="fal fa-eye"></i>
-                                                                                    145</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- post-widget-item end -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--tab end-->
-                                                </div>
-                                                <!--tabs end-->
-                                            </div>
-                                            <!-- content-tabs-wrap end -->
-                                        </div>
-                                    </div>
-                                    <!-- box-widget  end -->
-                                    <!-- box-widget -->
-                                    <div class="box-widget fl-wrap">
-                                        <div class="box-widget-content">
-                                            <div id="weather-widget" class="ideaboxWeather" data-city="New York"></div>
-                                        </div>
-                                    </div>
-                                    <!-- box-widget  end -->
-                                    <!-- box-widget -->
-                                    <div class="box-widget fl-wrap">
-                                        <div class="widget-title">Follow Us</div>
-                                        <div class="box-widget-content">
-                                            <div class="social-widget">
-                                                <a href="#" target="_blank" class="facebook-soc">
-                                                    <i class="fab fa-facebook-f"></i>
-                                                    <span class="soc-widget-title">Likes</span>
-                                                    <span class="soc-widget_counter">2640</span>
-                                                </a>
-                                                <a href="#" target="_blank" class="twitter-soc">
-                                                    <i class="fab fa-twitter"></i>
-                                                    <span class="soc-widget-title">Followers</span>
-                                                    <span class="soc-widget_counter">1456</span>
-                                                </a>
-                                                <a href="#" target="_blank" class="youtube-soc">
-                                                    <i class="fab fa-youtube"></i>
-                                                    <span class="soc-widget-title">Followers</span>
-                                                    <span class="soc-widget_counter">1456</span>
-                                                </a>
-                                                <a href="#" target="_blank" class="instagram-soc">
-                                                    <i class="fab fa-instagram"></i>
-                                                    <span class="soc-widget-title">Followers</span>
-                                                    <span class="soc-widget_counter">1456</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- box-widget  end -->
-                                    <!-- box-widget -->
-                                    <div class="box-widget fl-wrap">
-                                        <div class="widget-title">Popular Tags</div>
-                                        <div class="box-widget-content">
-                                            <div class="tags-widget">
-                                                <a href="#">Science</a>
-                                                <a href="#">Politics</a>
-                                                <a href="#">Technology</a>
-                                                <a href="#">Business</a>
-                                                <a href="#">Sports</a>
-                                                <a href="#">Food</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- box-widget  end -->
-                                    <!-- box-widget -->
-                                    <div class="box-widget fl-wrap">
-                                        <div class="widget-title">Our Last Twitts</div>
-                                        <div class="box-widget-content">
-                                            <div id="footer-twiit" class="fl-wrap"></div>
-                                            <a href="#" target="_blank" class="btn float-btn color-btn">Read us <i
-                                                    class="fas fa-caret-right"></i></a>
-                                        </div>
-                                    </div>
-                                    <!-- box-widget  end -->
-                                    <!-- box-widget -->
-                                    <div class="box-widget fl-wrap">
-                                        <div class="box-widget-content">
-                                            <div class="single-grid-slider slider_widget">
-                                                <div class="slider_widget_title">Editor's Choice</div>
-                                                <div class="swiper-container">
-                                                    <div class="swiper-wrapper">
-                                                        <!-- swiper-slide-->
-                                                        <div class="swiper-slide">
-                                                            <div class="grid-post-item     fl-wrap">
-                                                                <div class="grid-post-media gpm_sing">
-                                                                    <div class="bg-wrap">
-                                                                        <div class="bg" data-bg="images/all/21.jpg">
-                                                                        </div>
-                                                                        <div class="overlay"></div>
-                                                                    </div>
-                                                                    <div class="grid-post-media_title">
-                                                                        <a class="post-category-marker"
-                                                                            href="category.html">Technology</a>
-                                                                        <h4><a href="post-single.html">Tesla it tested
-                                                                                hypersonic Model-C</a></h4>
-                                                                        <span class="video-date"><i
-                                                                                class="far fa-clock"></i>16 january
-                                                                            2022</span>
-                                                                        <ul class="post-opt">
-                                                                            <li><i class="far fa-comments-alt"></i> 11
-                                                                            </li>
-                                                                            <li><i class="fal fa-eye"></i> 55 </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- swiper-slide end-->
-                                                        <!-- swiper-slide-->
-                                                        <div class="swiper-slide">
-                                                            <div class="grid-post-item  bold_gpi  fl-wrap">
-                                                                <div class="grid-post-media gpm_sing">
-                                                                    <div class="bg-wrap">
-                                                                        <div class="bg" data-bg="images/all/41.jpg">
-                                                                        </div>
-                                                                        <div class="overlay"></div>
-                                                                    </div>
-                                                                    <div class="grid-post-media_title">
-                                                                        <a class="post-category-marker"
-                                                                            href="category.html">Politics</a>
-                                                                        <h4><a href="post-single.html">Blue Origin
-                                                                                practices with orbital rocket in
-                                                                                Florida</a></h4>
-                                                                        <span class="video-date"><i
-                                                                                class="far fa-clock"></i> 05 december
-                                                                            2021</span>
-                                                                        <ul class="post-opt">
-                                                                            <li><i class="far fa-comments-alt"></i> 14
-                                                                            </li>
-                                                                            <li><i class="fal fa-eye"></i> 134 </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- swiper-slide end-->
-                                                        <!-- swiper-slide-->
-                                                        <div class="swiper-slide">
-                                                            <div class="grid-post-item  bold_gpi  fl-wrap">
-                                                                <div class="grid-post-media gpm_sing">
-                                                                    <div class="bg-wrap">
-                                                                        <div class="bg" data-bg="images/all/22.jpg">
-                                                                        </div>
-                                                                        <div class="overlay"></div>
-                                                                    </div>
-                                                                    <div class="grid-post-media_title">
-                                                                        <a class="post-category-marker"
-                                                                            href="category.html">Technology</a>
-                                                                        <h4><a href="post-single.html">Scientific
-                                                                                research goes to the next level</a></h4>
-                                                                        <span class="video-date"><i
-                                                                                class="far fa-clock"></i> 03 Janvier
-                                                                            2022</span>
-                                                                        <ul class="post-opt">
-                                                                            <li><i class="far fa-comments-alt"></i> 25
-                                                                            </li>
-                                                                            <li><i class="fal fa-eye"></i> 164 </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- swiper-slide end-->
-                                                    </div>
-                                                    <div class="sgs-pagination sgs_hor "></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- box-widget  end -->
-                                </div>
-                                <!-- sidebar  end -->
-                            </div>
-                        </div>
-                        <div class="limit-box fl-wrap"></div>
-                    </div>
-                </section>
-                <!-- section end -->
-                <!-- section   -->
-                <section class="dark-bg no-bottom-padding">
-                    <div class="container">
-                        <div class="main-video-wrap fl-wrap">
-                            <div class="video-main-cont">
-                                <div class="video-section-title fl-wrap">
-                                    <h2>Featured Video</h2>
-                                    <h4>Stay up-to-date</h4>
-                                    <a href="category.html">View All <i class="fas fa-caret-right"></i></a>
-                                </div>
-                                <a class="video-holder vh-main fl-wrap  image-popup" href="#">
-                                    <div class="bg"></div>
-                                    <div class="overlay"></div>
-                                    <div class="big_prom"> <i class="fas fa-play"></i></div>
-                                </a>
-                                <div class="video-holder-title fl-wrap">
-                                    <div class="video-holder-title_item"><a href="#"></a></div>
-                                    <span class="video-date"><i class="far fa-clock"></i> <strong></strong></span>
-                                    <a class="post-category-marker" href="category.html"></a>
-                                </div>
-                                <div class="vh-preloader"></div>
-                            </div>
-                            <!-- video-links-wrap   -->
-                            <div class="video-links-wrap">
-                                <!-- video-item  -->
-                                <div class="video-item video-item_active fl-wrap" data-url="post-single2.html"
-                                    data-video-link="https://www.youtube.com/watch?v=VLoqKdRxPSc">
-                                    <div class="video-item-img fl-wrap">
-                                        <img src="images/all/33.jpg" class="respimg" alt="">
-                                        <div class="play-icon"><i class="fas fa-play"></i></div>
-                                    </div>
-                                    <div class="video-item-title">
-                                        <h4>London Stay Most Popular City</h4>
-                                        <span class="video-date"><i class="far fa-clock"></i> <strong>25may
-                                                2022</strong></span>
-                                    </div>
-                                    <a class="post-category-marker" href="category.html">Business</a>
-                                </div>
-                                <!--video-item end   -->
-                                <!-- video-item  -->
-                                <div class="video-item fl-wrap" data-url="post-single2.html"
-                                    data-video-link="https://www.youtube.com/watch?v=K-6tPkm6cZA">
-                                    <div class="video-item-img fl-wrap">
-                                        <img src="images/all/43.jpg" class="respimg" alt="">
-                                        <div class="play-icon"><i class="fas fa-play"></i></div>
-                                    </div>
-                                    <div class="video-item-title">
-                                        <h4>Oculus in Trending Now</h4>
-                                        <span class="video-date"><i class="far fa-clock"></i> <strong>20april
-                                                2022</strong></span>
-                                    </div>
-                                    <a class="post-category-marker" href="category.html">Technology</a>
-                                </div>
-                                <!--video-item end   -->
-                                <!-- video-item  -->
-                                <div class="video-item fl-wrap" data-url="posts-ingle2.html"
-                                    data-video-link="https://vimeo.com/390742893">
-                                    <div class="video-item-img fl-wrap">
-                                        <img src="images/all/3.jpg" class="respimg" alt="">
-                                        <div class="play-icon"><i class="fas fa-play"></i></div>
-                                    </div>
-                                    <div class="video-item-title">
-                                        <h4>Additional Jobs and Economic Growth After the Pandemic</h4>
-                                        <span class="video-date"><i class="far fa-clock"></i><strong> 14december
-                                                2021</strong></span>
-                                    </div>
-                                    <a class="post-category-marker" href="category.html">Politics</a>
-                                </div>
-                                <!--video-item end   -->
-                                <!-- video-item  -->
-                                <div class="video-item fl-wrap" data-url="post-single2.html"
-                                    data-video-link="https://www.youtube.com/watch?v=vgVr_OpEVMQ">
-                                    <div class="video-item-img fl-wrap">
-                                        <img src="images/all/42.jpg" class="respimg" alt="">
-                                        <div class="play-icon"><i class="fas fa-play"></i></div>
-                                    </div>
-                                    <div class="video-item-title">
-                                        <h4>Scientific research goes to the next level</h4>
-                                        <span class="video-date"><i class="far fa-clock"></i> <strong>05december
-                                                2021</strong></span>
-                                    </div>
-                                    <a class="post-category-marker" href="category.html">Business</a>
-                                </div>
-                                <!--video-item end   -->
-                            </div>
-                            <!-- video-links-wrap end   -->
-                        </div>
-                    </div>
-                    <div class="video_carousel-wrap fl-wrap">
-                        <div class="container">
-                            <div class="video_carousel-container">
-                                <div class="video_carousel_title">
-                                    <h4>Popular Videos</h4>
-                                    <div class="vc-pagination pag-style"></div>
-                                </div>
-                                <!-- fw-carousel  -->
-                                <div class="video_carousel  lightgallery">
-                                    <div class="swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <!-- swiper-slide-->
-                                            <div class="swiper-slide">
-                                                <!-- video-item  -->
-                                                <div class="video-item fl-wrap">
-                                                    <div class="video-item-img fl-wrap">
-                                                        <img src="images/all/1.jpg" class="respimg" alt="">
-                                                        <a class="play-icon image-popup"
-                                                            href="https://www.youtube.com/watch?v=65YhmHsuD-M"><i
-                                                                class="fas fa-play"></i></a>
-                                                    </div>
-                                                    <div class="video-item-title">
-                                                        <h4><a href="post-single2.html">London Stay Most Popular
-                                                                City</a></h4>
-                                                        <span class="video-date"><i class="far fa-clock"></i> 05december
-                                                            2021</span>
-                                                    </div>
-                                                    <a class="post-category-marker" href="category.html">Science</a>
-                                                </div>
-                                                <!--video-item end   -->
-                                            </div>
-                                            <!-- swiper-slide end-->
-                                            <!-- swiper-slide-->
-                                            <div class="swiper-slide">
-                                                <!-- video-item  -->
-                                                <div class="video-item fl-wrap">
-                                                    <div class="video-item-img fl-wrap">
-                                                        <img src="images/all/44.jpg" class="respimg" alt="">
-                                                        <a class="play-icon image-popup"
-                                                            href="https://vimeo.com/155428349"><i
-                                                                class="fas fa-play"></i></a>
-                                                    </div>
-                                                    <div class="video-item-title">
-                                                        <h4><a href="post-single2.html">Options, options: As clock ticks
-                                                                on, climate talks </a></h4>
-                                                        <span class="video-date"><i class="far fa-clock"></i> 05december
-                                                            2021</span>
-                                                    </div>
-                                                    <a class="post-category-marker" href="category.html">Business</a>
-                                                </div>
-                                                <!--video-item end   -->
-                                            </div>
-                                            <!-- swiper-slide end-->
-                                            <!-- swiper-slide-->
-                                            <div class="swiper-slide">
-                                                <!-- video-item  -->
-                                                <div class="video-item fl-wrap">
-                                                    <div class="video-item-img fl-wrap">
-                                                        <img src="images/all/2.jpg" class="respimg" alt="">
-                                                        <a class="play-icon image-popup"
-                                                            href="https://vimeo.com/108359069"><i
-                                                                class="fas fa-play"></i></a>
-                                                    </div>
-                                                    <div class="video-item-title">
-                                                        <h4><a href="post-single2.html">Efforts to cut car, plane and
-                                                                ship get small boost</a></h4>
-                                                        <span class="video-date"><i class="far fa-clock"></i> 05december
-                                                            2021</span>
-                                                    </div>
-                                                    <a class="post-category-marker" href="category.html">Science</a>
-                                                </div>
-                                                <!--video-item end   -->
-                                            </div>
-                                            <!-- swiper-slide end-->
-                                            <!-- swiper-slide-->
-                                            <div class="swiper-slide">
-                                                <!-- video-item  -->
-                                                <div class="video-item fl-wrap">
-                                                    <div class="video-item-img fl-wrap">
-                                                        <img src="images/all/46.jpg" class="respimg" alt="">
-                                                        <a class="play-icon image-popup"
-                                                            href="https://www.youtube.com/watch?v=s-TySen2xLo"><i
-                                                                class="fas fa-play"></i></a>
-                                                    </div>
-                                                    <div class="video-item-title">
-                                                        <h4><a href="post-single2.html"> Climate change and your future
-                                                                health</a></h4>
-                                                        <span class="video-date"><i class="far fa-clock"></i> 05december
-                                                            2021</span>
-                                                    </div>
-                                                    <a class="post-category-marker" href="category.html">Technology</a>
-                                                </div>
-                                                <!--video-item end   -->
-                                            </div>
-                                            <!-- swiper-slide end-->
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- fw-carousel end -->
-                                <div class="cc-prev cc_btn"><i class="fas fa-caret-left"></i></div>
-                                <div class="cc-next cc_btn"><i class="fas fa-caret-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- section end -->
-                <!-- section  -->
-                <section>
-                    <div class="container">
-                        <div class="section-title sect_dec">
-                            <h2>Best In Categories</h2>
-                            <h4>Don't miss daily news</h4>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-5">
-                                <div class="list-post-wrap list-post-wrap_column list-post-wrap_column_fw">
-                                    <!--list-post-->
-                                    <div class="list-post fl-wrap">
-                                        <a class="post-category-marker" href="#">Sports</a>
-                                        <div class="list-post-media">
-                                            <a href="post-single.html">
-                                                <div class="bg-wrap">
-                                                    <div class="bg" data-bg="images/all/15.jpg"></div>
-                                                </div>
-                                            </a>
-                                            <span class="post-media_title">&copy; Image Copyrights Title</span>
-                                        </div>
-                                        <div class="list-post-content">
-                                            <h3><a href="post-single.html">Goodwin must Break Clarkson hold </a></h3>
-                                            <span class="post-date"><i class="far fa-clock"></i> 18 may 2022</span>
-                                            <p>Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit
-                                                amet, consectetur Nulla fringilla purus at leo dignissim congue. Mauris
-                                                elementum accumsan leo vel tempor. </p>
-                                            <ul class="post-opt">
-                                                <li><i class="far fa-comments-alt"></i> 6 </li>
-                                                <li><i class="fal fa-eye"></i> 587 </li>
-                                            </ul>
-                                            <div class="author-link"><a href="author-single.html"><img
-                                                        src="images/avatar/1.png" alt=""> <span>By Beeroth Corneille</span></a></div>
-                                        </div>
-                                    </div>
-                                    <!--list-post end-->
-                                </div>
-                                <a href="blog2.html" class="dark-btn fl-wrap"> Read all News </a>
-                            </div>
-                            <div class="col-md-7">
-                                <div class="picker-wrap-container fl-wrap">
-                                    <div class="picker-wrap-controls">
-                                        <ul class="fl-wrap">
-                                            <li><span class="pwc_up"><i class="fas fa-caret-up"></i></span></li>
-                                            <li><span class="pwc_pause"><i class="fas fa-pause"></i></span></li>
-                                            <li><span class="pwc_down"><i class="fas fa-caret-down"></i></span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="picker-wrap fl-wrap">
-                                        <div class="list-post-wrap  fl-wrap">
-                                            <!--list-post-->
-                                            <div class="list-post fl-wrap">
-                                                <div class="list-post-media">
-                                                    <a href="post-single.html">
-                                                        <div class="bg-wrap">
-                                                            <div class="bg" data-bg="images/all/5.jpg"></div>
-                                                        </div>
-                                                    </a>
-                                                    <span class="post-media_title">&copy; Image Copyrights Title</span>
-                                                </div>
-                                                <div class="list-post-content">
-                                                    <a class="post-category-marker" href="#">Sports</a>
-                                                    <h3><a href="post-single.html">Winton SuperSprint cars cancelled</a>
-                                                    </h3>
-                                                    <span class="post-date"><i class="far fa-clock"></i> 18 may
-                                                        2022</span>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                        eiusmod tempor incididunt .</p>
-                                                    <ul class="post-opt">
-                                                        <li><i class="far fa-comments-alt"></i> 6 </li>
-                                                        <li><i class="fal fa-eye"></i> 587 </li>
-                                                    </ul>
-                                                    <div class="author-link"><a href="author-single.html"><img
-                                                                src="images/avatar/1.png" alt=""> <span>By Beeroth
-                                                                Corneille</span></a></div>
-                                                </div>
-                                            </div>
-                                            <!--list-post end-->
-                                            <!--list-post-->
-                                            <div class="list-post fl-wrap">
-                                                <div class="list-post-media">
-                                                    <a href="post-single.html">
-                                                        <div class="bg-wrap">
-                                                            <div class="bg" data-bg="images/all/48.jpg"></div>
-                                                        </div>
-                                                    </a>
-                                                    <span class="post-media_title">&copy; Image Copyrights Title</span>
-                                                </div>
-                                                <div class="list-post-content">
-                                                    <a class="post-category-marker" href="category.html">Science</a>
-                                                    <h3><a href="post-single.html">Countries at COP26 launch plan for
-                                                            net-zero shipping lanes</a></h3>
-                                                    <span class="post-date"><i class="far fa-clock"></i> 15 may
-                                                        2022</span>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                        eiusmod tempor incididunt .</p>
-                                                    <ul class="post-opt">
-                                                        <li><i class="far fa-comments-alt"></i> 5 </li>
-                                                        <li><i class="fal fa-eye"></i> 456 </li>
-                                                    </ul>
-                                                    <div class="author-link"><a href="author-single.html"><img
-                                                                src="images/avatar/2.jpg" alt=""> <span>By Mark
-                                                                Rose</span></a></div>
-                                                </div>
-                                            </div>
-                                            <!--list-post end-->
-                                            <!--list-post-->
-                                            <div class="list-post fl-wrap">
-                                                <div class="list-post-media">
-                                                    <a href="post-single.html">
-                                                        <div class="bg-wrap">
-                                                            <div class="bg" data-bg="images/all/2.jpg"></div>
-                                                        </div>
-                                                    </a>
-                                                    <span class="post-media_title">&copy; Image Copyrights Title</span>
-                                                </div>
-                                                <div class="list-post-content">
-                                                    <a class="post-category-marker" href="category.html">Technology</a>
-                                                    <h3><a href="post-single.html">New VR Glasses and Headset System
-                                                            Release</a></h3>
-                                                    <span class="post-date"><i class="far fa-clock"></i> 15 may
-                                                        2022</span>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                        eiusmod tempor incididunt .</p>
-                                                    <ul class="post-opt">
-                                                        <li><i class="far fa-comments-alt"></i> 5 </li>
-                                                        <li><i class="fal fa-eye"></i> 456 </li>
-                                                    </ul>
-                                                    <div class="author-link"><a href="author-single.html"><img
-                                                                src="images/avatar/2.jpg" alt=""> <span>By Mark
-                                                                Rose</span></a></div>
-                                                </div>
-                                            </div>
-                                            <!--list-post end-->
-                                            <!--list-post-->
-                                            <div class="list-post fl-wrap">
-                                                <div class="list-post-media">
-                                                    <a href="post-single.html">
-                                                        <div class="bg-wrap">
-                                                            <div class="bg" data-bg="images/all/49.jpg"></div>
-                                                        </div>
-                                                    </a>
-                                                    <span class="post-media_title">&copy; Image Copyrights Title</span>
-                                                </div>
-                                                <div class="list-post-content">
-                                                    <a class="post-category-marker" href="category.html">Science</a>
-                                                    <h3><a href="post-single.html">How to start Home renovation.</a>
-                                                    </h3>
-                                                    <span class="post-date"><i class="far fa-clock"></i> 05 April
-                                                        2022</span>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                        eiusmod tempor incididunt .</p>
-                                                    <ul class="post-opt">
-                                                        <li><i class="far fa-comments-alt"></i> 55</li>
-                                                        <li><i class="fal fa-eye"></i> 987 </li>
-                                                    </ul>
-                                                    <div class="author-link"><a href="author-single.html"><img
-                                                                src="images/avatar/3.jpg" alt=""> <span>By Ann
-                                                                Kowalsky</span></a></div>
-                                                </div>
-                                            </div>
-                                            <!--list-post end-->
-                                        </div>
-                                    </div>
-                                    <div class="controls-limit fl-wrap"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="limit-box"></div>
-                </section>
-                <!-- section end -->
-                <!-- section -->
-                <section class="no-padding">
-                    <div class="fs-carousel-wrap">
-                        <div class="fs-carousel-wrap_title">
-                            <div class="fs-carousel-wrap_title-wrap fl-wrap">
-                                <h4>Trending News</h4>
-                                <h5>Don't Miss And Stay Up-to-date. Top pic for you.</h5>
-                            </div>
-                            <div class="abs_bg"></div>
-                            <div class="gs-controls">
-                                <div class="gs_button gc-button-next"><i class="fas fa-caret-right"></i></div>
-                                <div class="gs_button gc-button-prev"><i class="fas fa-caret-left"></i></div>
-                            </div>
-                        </div>
-                        <div class="fs-carousel fl-wrap">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <!-- swiper-slide-->
-                                    <div class="swiper-slide">
-                                        <div class="grid-post-item  bold_gpi  fl-wrap">
-                                            <div class="grid-post-media gpm_sing">
-                                                <div class="bg" data-bg="images/all/50.jpg"></div>
-                                                <div class="author-link"><a href="author-single.html"><img
-                                                            src="images/avatar/2.jpg" alt=""> <span>By Mark
-                                                            Rose</span></a></div>
-                                                <div class="grid-post-media_title">
-                                                    <a class="post-category-marker" href="category.html">Business</a>
-                                                    <h4><a href="post-single.html">Envatocoin Vulnerable To Retest 20K
-                                                            Support</a></h4>
-                                                    <span class="video-date"><i class="far fa-clock"></i> 02 Janvier
-                                                        2022</span>
-                                                    <ul class="post-opt">
-                                                        <li><i class="far fa-comments-alt"></i> 7 </li>
-                                                        <li><i class="fal fa-eye"></i> 88 </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- swiper-slide end-->
-                                    <!-- swiper-slide-->
-                                    <div class="swiper-slide">
-                                        <div class="grid-post-item  bold_gpi  fl-wrap">
-                                            <div class="grid-post-media gpm_sing">
-                                                <div class="bg" data-bg="images/all/53.jpg"></div>
-                                                <div class="author-link"><a href="author-single.html"><img
-                                                            src="images/avatar/3.jpg" alt=""> <span>By Ann
-                                                            Kowalsky</span></a></div>
-                                                <div class="grid-post-media_title">
-                                                    <a class="post-category-marker" href="category.html">Technology</a>
-                                                    <h4><a href="post-single.html">Videos show SpaceX's Dragon capsule
-                                                            as it returns to Earth</a></h4>
-                                                    <span class="video-date"><i class="far fa-clock"></i> 13 april
-                                                        2021</span>
-                                                    <ul class="post-opt">
-                                                        <li><i class="far fa-comments-alt"></i> 3 </li>
-                                                        <li><i class="fal fa-eye"></i> 89</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- swiper-slide end-->
-                                    <!-- swiper-slide-->
-                                    <div class="swiper-slide">
-                                        <div class="grid-post-item  bold_gpi  fl-wrap">
-                                            <div class="grid-post-media gpm_sing">
-                                                <div class="bg" data-bg="images/all/54.jpg"></div>
-                                                <div class="author-link"><a href="author-single.html"><img
-                                                            src="images/avatar/2.jpg" alt=""> <span>By Mark
-                                                            Rose</span></a></div>
-                                                <div class="grid-post-media_title">
-                                                    <a class="post-category-marker" href="category.html">Sports</a>
-                                                    <h4><a href="post-single.html">Sports season ends with more
-                                                            surprises</a></h4>
-                                                    <span class="video-date"><i class="far fa-clock"></i> 23 may
-                                                        2021</span>
-                                                    <ul class="post-opt">
-                                                        <li><i class="far fa-comments-alt"></i> 34</li>
-                                                        <li><i class="fal fa-eye"></i> 567 </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- swiper-slide end-->
-                                    <!-- swiper-slide-->
-                                    <div class="swiper-slide">
-                                        <div class="grid-post-item  bold_gpi  fl-wrap">
-                                            <div class="grid-post-media gpm_sing">
-                                                <div class="bg" data-bg="images/all/52.jpg"></div>
-                                                <div class="author-link"><a href="author-single.html"><img
-                                                            src="images/avatar/1.png" alt=""> <span>By Beeroth
-                                                            Corneille</span></a></div>
-                                                <div class="grid-post-media_title">
-                                                    <a class="post-category-marker" href="category.html">Science</a>
-                                                    <h4><a href="post-single.html">World electric ready to race
-                                                            tomorrow</a></h4>
-                                                    <span class="video-date"><i class="far fa-clock"></i> 6 april
-                                                        2021</span>
-                                                    <ul class="post-opt">
-                                                        <li><i class="far fa-comments-alt"></i> 25 </li>
-                                                        <li><i class="fal fa-eye"></i> 164 </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- swiper-slide end-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- section end -->
-                <!-- section  -->
-                <div class="gray-bg ad-wrap fl-wrap">
-                    <div class="content-banner-wrap">
-                        <img src="images/all/banner.jpg" class="respimg" alt="">
-                    </div>
-                </div>
-                <!-- section end -->
+            <div class="nav-right-part nav-right-part-mobile">
+                <a class="search-bar-btn" href="#">
+                    <i class="fa fa-search"></i>
+                </a>
             </div>
-            <!-- content  end-->
-            <!-- footer -->
-            <footer class="fl-wrap main-footer">
-                <div class="container">
-                    <!-- footer-widget-wrap -->
-                    <div class="footer-widget-wrap fl-wrap">
-                        <div class="row">
-                            <!-- footer-widget -->
-                            <div class="col-md-4">
-                                <div class="footer-widget">
-                                    <div class="footer-widget-content">
-                                        <a href="index.html" class="footer-logo"><img src="images/logoB-10.png" alt=""></a>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Eaque ipsa quae ab illo
-                                            inventore veritatis et quasi architecto. </p>
-                                        <div class="footer-social fl-wrap">
-                                            <ul>
-                                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                                </li>
-                                                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                                                </li>
-                                                <li><a href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
-                                                <li><a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- footer-widget  end-->
-                            <!-- footer-widget -->
-                            <div class="col-md-2">
-                                <div class="footer-widget">
-                                    <div class="footer-widget-title">Categories </div>
-                                    <div class="footer-widget-content">
-                                        <div class="footer-list footer-box fl-wrap">
-                                            <ul>
-                                                <li> <a href="#">Politics</a></li>
-                                                <li> <a href="#">Technology</a></li>
-                                                <li> <a href="#">Business</a></li>
-                                                <li> <a href="#">Sports</a></li>
-                                                <li> <a href="#">Science</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- footer-widget  end-->
-                            <!-- footer-widget -->
-                            <div class="col-md-2">
-                                <div class="footer-widget">
-                                    <div class="footer-widget-title">Links</div>
-                                    <div class="footer-widget-content">
-                                        <div class="footer-list footer-box fl-wrap">
-                                            <ul>
-                                                <li> <a href="#">Home</a></li>
-                                                <li> <a href="#">About</a></li>
-                                                <li> <a href="#">Contacts</a></li>
-                                                <li> <a href="#">News</a></li>
-                                                <li> <a href="#">Shop</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- footer-widget  end-->
-                            <!-- footer-widget -->
-                            <div class="col-md-4">
-                                <div class="footer-widget">
-                                    <div class="footer-widget-title">Subscribe</div>
-                                    <div class="footer-widget-content">
-                                        <div class="subcribe-form fl-wrap">
-                                            <p>Want to be notified when we launch a new template or an udpate. Just sign
-                                                up and we'll send you a notification by email.</p>
-                                            <form id="subscribe" class="fl-wrap">
-                                                <input class="enteremail" name="email" id="subscribe-email"
-                                                    placeholder="Your Email" spellcheck="false" type="text">
-                                                <button type="submit" id="subscribe-button"
-                                                    class="subscribe-button color-bg">Send </button>
-                                                <label for="subscribe-email" class="subscribe-message"></label>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- footer-widget  end-->
-                        </div>
-                    </div>
-                    <!-- footer-widget-wrap end-->
-                </div>
-                <div class="footer-bottom fl-wrap">
-                    <div class="container">
-                        <div class="copyright"><span>&#169; Gmag 2022</span> . All rights reserved. </div>
-                        <div class="to-top"> <i class="fas fa-caret-up"></i></div>
-                        <div class="subfooter-nav">
-                            <ul>
-                                <li><a href="#">Terms & Conditions</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!-- footer end-->
-            <div class="aside-panel">
-                <ul>
-                    <li> <a href="#"><i class="far  fa-podium"></i><span>Politics</span></a></li>
-                    <li> <a href="#"><i class="far fa-atom"></i><span>Technology</span></a></li>
-                    <li> <a href="#"><i class="far fa-user-chart"></i><span>Business</span></a></li>
-                    <li> <a href="#"><i class="far fa-tennis-ball"></i><span>Sports</span></a></li>
-                    <li> <a href="#"><i class="far fa-flask"></i><span>Science</span></a></li>
+            <div class="collapse navbar-collapse" id="itech_main_menu">
+                <ul class="navbar-nav menu-open text-lg-center ps-lg-5">
+                    <li ><a href="#">Acceuil</a></li>
+                    <li><a href="https://wa.me/message/VGUTYPTHKKJMF1" target="_blank">Contact</a></li>
                 </ul>
             </div>
-        </div>
-        <!-- wrapper end -->
-        <!-- cookie-info-bar -->
-        <div class="cookie-info-bar">
-            <div class="container">
-                <div class="cookie-info-bar_title"><i class="fal fa-cookie"></i>Our site uses cookies. Learn more about
-                    our use of cookies: <a href="#">Cookie policy</a></div>
-                <a href="#" class="sicb_btn color-bg">Accept</a>
-                <a href="#" class="sicb_btn">Reject</a>
+            <div class="nav-right-part nav-right-part-desktop align-self-center">
+                <a class="btn btn-border-base" href="about.html">Enskri Konny a <i class="fa fa-plus"></i></a>
             </div>
         </div>
-        <!-- cookie-info-bar end -->
-        <!--register form -->
-        <div class="main-register-container">
-            <div class="reg-overlay close-reg-form"></div>
-            <div class="main-register-holder">
-                <div class="main-register-wrap fl-wrap">
-                    <div class="main-register_bg">
-                        <div class="bg-wrap">
-                            <div class="bg par-elem " data-bg="images/bg/1.jpg"></div>
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="mg_logo"><img src="images/logo2.png" alt=""></div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- page title start -->
+    <div class="banner-area bg-relative banner-area-2 bg-cover" style="background-image: url('./assets/img/bg/8.png');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 align-self-center">
+                    <div class="banner-inner pe-xl-5">
+                        <h6 class="subtitle wow animated fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">CQR (Cryptocurrency Quant Robot)</h6>
+                        <h2 class="title wow animated fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.4s"> Envesti pou yon<span> Lane</span> epi fe lajan <span> Chak jou</span></h2>
+                        <p class="content pe-xl-5 wow animated fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s">CQR, se yon platfòm anliy ki pèmèt ou envesti epi fè benefis ak pwofi nan lajan elektronik. Avantaj Plat-fòm sa se bay moun posibilite pou yo fè lajan chak jou pandan yap ekzekite yon ti travay chak jou. <br> Sa pa manden okenn konesans nan teknoloji, wap just bezwen entènet, epi 5 a 10 minut pouw ka fè tach yo!</p>
+                        <a class="btn btn-border-base wow animated fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.6s" href="https://www.cqrcqr.com/#/reg?code=LQ6542" target="_blank">Envesti Konnya <i class="fa fa-plus"></i></a>
+                        <!-- <div class="d-inline-block align-self-center wow animated fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.7s">
+                            <a class="video-play-btn-hover" href="https://www.youtube.com/embed/Wimkqo8gDZ0"><img src="assets/img/video.svg" alt="img"> <h6 class="d-inline-block">how we work</h6></a>
+                        </div> -->
                     </div>
-                    <div class="main-register tabs-act fl-wrap">
-                        <ul class="tabs-menu">
-                            <li class="current"><a href="#tab-1"><i class="fal fa-sign-in-alt"></i> Login</a></li>
-                            <li><a href="#tab-2"><i class="fal fa-user-plus"></i> Register</a></li>
+                </div>
+                <div class="col-lg-6 col-md-9 wow animated fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                    <div class="banner-thumb-2 mt-4 mt-lg-0">
+                        <img class="banner-animate-img banner-animate-img-4" src="assets/img/banner-2/3.png" alt="img">
+                        <div class="main-img-wrap">
+                            <img class="banner-animate-img banner-animate-img-1 left_image_bounce" src="assets/img/my/Saly-30.png" alt="img">
+                            <img class="banner-animate-img banner-animate-img-2 left_image_bounce" src="assets/img/my/Succes.png" width="95px" alt="img">
+                            <img class="banner-animate-img banner-animate-img-3 top_image_bounce" src="assets/img/my/3d-green-bag-money-with-dollar-sign.png" alt="img">
+                            <img class="main-img" src="assets/img/my/1576.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- about area start -->
+    <div class="about-area pd-top-120 pd-bottom-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0 wow animated fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                    <div class="about-thumb-inner">
+                        <img class="main-img" src="assets/img/my/Vector (2).png" alt="img">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow animated fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                    <div class="section-title mb-0">
+                        <h6 class="sub-title">Fonksyonman</h6>
+                        <h2 class="title">Kijan pouw fè kob sou <span>CQR</span> </h2>
+                        <p class="content mb-4">Lew envesti nan CQR, ou gen yon reveni ki stab. <br> Platform lan ofriw lot fason pouw antre plis lajan toujou.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="single-list-inner style-check style-heading style-check mb-3">
+                                    <li><i class="fas fa-check-circle"></i> Lew ankouraje moun vinn envesti</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="single-list-inner style-check style-heading style-check mb-3">
+                                    <li><i class="fas fa-check-circle"></i> Lew antreprann Biznis kom Machann ki setifye. </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="content">Kantite kòb wap fè pa jou, pa mwa, pa ane depann de ki kantite kòb ou te envesti! Donk toutan ou envesti plus lajan, wap antre plus lajan! <br>
+                            Pouw envesti nan CQR, wap bezwen achte yon lajan nimerik ki rele USDT, sou mache lokal lan, 1 USDT pi chè ke dola ameriken!</p>
+                        <a class="btn btn-border-base" href="about.html">Plis enfo, Kontakte yon Kapitèn <i class="fa fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about area end -->
+
+
+    <!-- pricing-area start -->
+    <div class="pricing-area pd-top-120 pd-bottom-90">
+        <div class="container">
+            <div class="section-title text-center">
+                <h6 class="sub-title">Plan Envestisman</h6>
+                <h2 class="title">Plan <span> VIP </span> yo valab pou yon <span> lane </span></h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-pricing-inner">
+                        <div class="price-header text-center mb-lg-4">
+                            <h5>VIP OKX</h5>
+                            <h2 class="mb-3">35 <sub>/USDT</sub></h2>
+                        </div>
+                        <ul>
+                            <li><i class="fa fa-check"></i>Ou envesti 35 USDT</li>
+                            <li><i class="fa fa-check"></i>Ou fè chak jou 1.40 USDT</li>
+                            <li><i class="fa fa-check"></i>Ou fè chak mwa 42 USDT </li>
+                            <li><i class="fa fa-check"></i>Pou yon ane wap fè 511 USDT </li>
                         </ul>
-                        <div class="close-modal close-reg-form"><i class="fal fa-times"></i></div>
-                        <!--tabs -->
-                        <div id="tabs-container">
-                            <div class="tab">
-                                <!--tab -->
-                                <div id="tab-1" class="tab-content first-tab">
-                                    <div class="custom-form">
-                                        <form method="post" name="registerform">
-                                            <label>Username or Email Address <span>*</span> </label>
-                                            <input name="email" type="text" onClick="this.select()" value="">
-                                            <label>Password <span>*</span> </label>
-                                            <input name="password" type="password" onClick="this.select()" value="">
-                                            <div class="filter-tags">
-                                                <input id="check-a" type="checkbox" name="check" checked>
-                                                <label for="check-a">Remember me</label>
-                                            </div>
-                                            <div class="lost_password">
-                                                <a href="#">Lost Your Password?</a>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <button type="submit" class="log-submit-btn color-bg"><span>Log
-                                                    In</span></button>
-                                        </form>
-                                    </div>
-                                </div>
-                                <!--tab end -->
-                                <!--tab -->
-                                <div class="tab">
-                                    <div id="tab-2" class="tab-content">
-                                        <div class="custom-form">
-                                            <form method="post" name="registerform" class="main-register-form"
-                                                id="main-register-form2">
-                                                <label>Full Name <span>*</span> </label>
-                                                <input name="name" type="text" onClick="this.select()" value="">
-                                                <label>Email Address <span>*</span></label>
-                                                <input name="email" type="text" onClick="this.select()" value="">
-                                                <label>Password <span>*</span></label>
-                                                <input name="password" type="password" onClick="this.select()" value="">
-                                                <button type="submit"
-                                                    class="log-submit-btn color-bg"><span>Register</span></button>
-                                            </form>
+                        <a class="btn btn-border-gray border-radius-0 w-100" href="https://www.cqrcqr.com/#/reg?code=LQ6542" target="_blank">Achte Plan sa</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-pricing-inner">
+                        <div class="price-header text-center mb-lg-4">
+                            <h5>VIP Bitfinex</h5>
+                            <h2 class="mb-3">70 <sub>/USDT</sub></h2>
+                        </div>
+                        <ul>
+                            <li><i class="fa fa-check"></i>Ou envesti 70 USDT</li>
+                            <li><i class="fa fa-check"></i>Ou fè chak jou 2.80 USDT</li>
+                            <li><i class="fa fa-check"></i>Ou fè chak mwa 84 USDT </li>
+                            <li><i class="fa fa-check"></i>Pou yon ane wap fè 1022 USDT </li>
+                        </ul>
+                        <a class="btn btn-border-gray border-radius-0 w-100" href="https://www.cqrcqr.com/#/reg?code=LQ6542" target="_blank">Achte Plan sa</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-pricing-inner">
+                        <div class="price-header text-center mb-lg-4">
+                            <h5>VIP Bitflyer</h5>
+                            <h2 class="mb-3">210 <sub>/USDT</sub></h2>
+                        </div>
+                        <ul>
+                            <li><i class="fa fa-check"></i>Ou envesti 210 USDT</li>
+                            <li><i class="fa fa-check"></i>Ou fè chak jou 8.40 USDT</li>
+                            <li><i class="fa fa-check"></i>Ou fè chak mwa 252 USDT </li>
+                            <li><i class="fa fa-check"></i>Pou yon ane wap fè 3066 USDT </li>
+                        </ul>
+                        <a class="btn btn-border-gray border-radius-0 w-100" href="https://www.cqrcqr.com/#/reg?code=LQ6542" target="_blank">Achte Plan sa</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-pricing-inner">
+                        <div class="price-header text-center mb-lg-4">
+                            <h5>VIP Coinbase</h5>
+                            <h2 class="mb-3">520 <sub>/USDT</sub></h2>
+                        </div>
+                        <ul>
+                            <li><i class="fa fa-check"></i>Ou envesti 520 USDT</li>
+                            <li><i class="fa fa-check"></i>Ou fè chak jou 20.80 USDT</li>
+                            <li><i class="fa fa-check"></i>Ou fè chak mwa 624 USDT </li>
+                            <li><i class="fa fa-check"></i>Pou yon ane wap fè 7592 USDT </li>
+                        </ul>
+                        <a class="btn btn-border-gray border-radius-0 w-100" href="https://www.cqrcqr.com/#/reg?code=LQ6542" target="_blank">Achte Plan sa</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-pricing-inner">
+                        <div class="price-header text-center mb-lg-4">
+                            <h5>VIP Huobi</h5>
+                            <h2 class="mb-3">1500 <sub>/USDT</sub></h2>
+                        </div>
+                        <ul>
+                            <li><i class="fa fa-check"></i>Ou envesti 1500 USDT</li>
+                            <li><i class="fa fa-check"></i>Ou fè chak jou 60 USDT</li>
+                            <li><i class="fa fa-check"></i>Ou fè chak mwa 1800 USDT </li>
+                            <li><i class="fa fa-check"></i>Pou yon ane wap fè 21600 USDT </li>
+                        </ul>
+                        <a class="btn btn-border-gray border-radius-0 w-100" href="https://www.cqrcqr.com/#/reg?code=LQ6542" target="_blank">Achte Plan sa</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-pricing-inner">
+                        <div class="price-header text-center mb-lg-4">
+                            <h5>VIP Binabce</h5>
+                            <h2 class="mb-3">X <sub>/USDT</sub></h2>
+                        </div>
+                        <ul>
+                            <li><i class="fa fa-check"></i>Ou envesti X USDT</li>
+                            <li><i class="fa fa-check"></i>Ou fè chak jou X USDT</li>
+                            <li><i class="fa fa-check"></i>Ou fè chak mwa X USDT </li>
+                            <li><i class="fa fa-check"></i>Pou tout ane a wap fè X USDT </li>
+                        </ul>
+                        <a class="btn btn-border-gray border-radius-0 w-100" href="https://www.cqrcqr.com/#/reg?code=LQ6542" target="_blank">Achte Plan sa</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- pricing-area start -->
+
+    <!-- counter area start -->
+    <div class="counter-area bg-relative bg-cover pd-top-110 pd-bottom-70" style="background-image: url('./assets/img/bg/10.png');">
+       
+    </div>
+    <!-- counter area end -->
+
+    <!-- contact-inner-1 start -->
+    <div class="contact-area">
+        <div class="container">
+            <div class="contact-inner-1">
+                <div class="row">
+                    <div class="col-lg-8 wow animated fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                        <img class="w-100" src="assets/img/bg/19.png" alt="img">
+                    </div>
+                    <div class="col-lg-4 wow animated fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                        <div class="section-title mb-0">.
+                            <h6 class="sub-title">Kesyon/Repons</h6>
+                            <h2 class="title">Saw dwe konnen de <span>CQR</span> </h2>
+                            <p class="content">CQR, son platfom ki pran nesans nan lane 2013, epi ki evolye nan zafè tranzaksyon Blockchain, Sistem robotize li itilize pou bay chak moun pi bon opotinite pou fè tach fè rann li difisil  pou CQR fè fayit.</p>
+                            <div class="accordion accordion-inner style-3 accordion-icon-left mt-3" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Kijan ou fè DEPO sou kont ou?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Pouw envesti nan CQR, ou dwe rechaje kont ou ak USDT, apre sa pouw achte plan. <br>
+                                            Ou ka achte USDT sou nenpot lot Platfom oubyen nan men machann ki sètifye nan CQR.
                                         </div>
                                     </div>
                                 </div>
-                                <!--tab end -->
-                            </div>
-                            <!--tabs end -->
-                            <div class="log-separator fl-wrap"><span>or</span></div>
-                            <div class="soc-log  fl-wrap">
-                                <p>For faster login or register use your social account.</p>
-                                <a href="#"><i class="fab fa-facebook-f"></i>Connect with Facebook</a>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Kijan ou ka retire lajan sou kont ou?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            CQR baw posiblite pouw fe retrè lew vle, ou ka depoze lajanw sou yon potfèy nimerik, oubyen vann li ak yon ajan ak payman Moncash oubyen viman bankè<div class=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Kijan ou sekirize kont ou?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Lew finn enskri, klike sou nimero telefon ou an ki afiche an pouw ka sekirize kont ou ak foto pyes ou nan <em> Verifye kont</em>. <br>Pa pataje modepas ou ak pyès ou ak pèsonn.
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--register form end -->
     </div>
-    <!-- Main end -->
-    <!--=============== scripts  ===============-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-</body>
+    <!-- contact-inner-1 end -->
 
+ 
+
+   
+
+
+    <!-- footer area start -->
+    <footer class="footer-area footer-area-2 bg-gray mt-0 pd-top-120">
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget widget_about">
+                        <div class="thumb">
+                            <img src="assets/img/logo.png" alt="img">
+                        </div>
+                        <div class="details">
+                            <p>Melbourne is simply is dumiomy is text Lorem Ipsum is simply</p>
+                            <div class="subscribe mt-4">
+                                <input type="text" placeholder="E-mail">
+                                <button><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 ps-xl-5">
+                    <div class="widget widget_nav_menu">
+                        <h4 class="widget-title">Our Service</h4>
+                        <ul>
+                            <li><a href="service.html"><i class="fas fa-chevron-right"></i> Ui Design</a></li>
+                            <li><a href="service.html"><i class="fas fa-chevron-right"></i> Web design</a></li>
+                            <li><a href="service.html"><i class="fas fa-chevron-right"></i> Digital marketing </a></li>
+                            <li><a href="service.html"><i class="fas fa-chevron-right"></i> Video Editing</a></li>
+                            <li><a href="service.html"><i class="fas fa-chevron-right"></i> Pc Repairs</a></li>
+                            <li><a href="service.html"><i class="fas fa-chevron-right"></i> Web Development</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 ps-xl-5">
+                    <div class="widget widget_nav_menu">
+                        <h4 class="widget-title">Pay links</h4>
+                        <ul>
+                            <li><a href="service.html"><i class="fas fa-chevron-right"></i> Credit industrys</a></li>
+                            <li><a href="service.html"><i class="fas fa-chevron-right"></i> Reasearch sector</a></li>
+                            <li><a href="service.html"><i class="fas fa-chevron-right"></i> Finance Sector </a></li>
+                            <li><a href="service.html"><i class="fas fa-chevron-right"></i> Credit industrys</a></li>
+                            <li><a href="service.html"><i class="fas fa-chevron-right"></i> Reasearch sector</a></li>
+                            <li><a href="service.html"><i class="fas fa-chevron-right"></i> Finance Sector</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget widget-recent-post">
+                        <h4 class="widget-title">Contact us</h4>
+                        <div class="widget widget_contact">
+                            <ul class="details">
+                                <li><i class="fa fa-map-marker-alt"></i>4517 Washington Ave. Manchester, Kentucky 39495</li>
+                                <li class="mt-3"><i class="fa fa-phone-alt"></i> (+888) 123 456 765</li>
+                                <li class="mt-2"><i class="fas fa-envelope"></i> infoname@mail.com</li>
+                            </ul>
+                            <ul class="social-media mt-4">
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 align-self-center">
+                        <p>©CQR Media | All Rights Reserved</p>
+                    </div>
+                    <div class="col-md-6 text-lg-end">
+                        <a href="https://wa.me/message/VGUTYPTHKKJMF1" target="_blank">Contact Whatsapp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+
+    <!-- all plugins here -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+    <script src="assets/js/magnific.min.js"></script>
+    <script src="assets/js/nice-select.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/owl.min.js"></script>
+    <script src="assets/js/counter-up.min.js"></script>
+    <script src="assets/js/waypoint.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+
+    <!-- main js  -->
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
